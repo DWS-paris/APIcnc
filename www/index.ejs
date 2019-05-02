@@ -122,6 +122,8 @@
                         console.log(formData)
 
                         asyncFetch('/api/event', formData)
+                        .then( data => console.log(data) )
+                        .catch( err => console.error(err) )
                     }
                     else( alert('Tous les champs') )
                 }) 

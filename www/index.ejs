@@ -12,66 +12,74 @@
     <body>
         <h1>Ajouter un événement</h1>
         <form action="#">
-            <label for="title">Titre de l'événement</label>
-            <input type="text" id="title" name="title" required minlength="5" >
+            <fieldset> 
+                <legend>Votree événement</legend>
+                <label for="title">Titre de l'événement</label>
+                <input type="text" id="title" name="title" required minlength="5" placeholder="Indiquer le nom de votre festival">
 
-            <label for="cover">Image de l'événement</label>
-            <input type="text" id="cover" name="cover" required minlength="5" >
+                <label for="cover">Image de l'événement</label>
+                <input type="text" id="cover" name="cover" required minlength="5" placeholder="Indiquer un lien vers l'affiche du festival" >
 
-            <label for="description">Description de l'événement</label>
-            <textarea name="description" id="description" required minlength="5"></textarea>
+                <label for="description">Description de l'événement</label>
+                <textarea name="description" id="description" required minlength="5" placeholder="Ajouter une description à votre événement"></textarea>
 
-            <label for="event-url">Lien vers l'événement</label>
-            <input type="text" id="event-url" name="event-url" required minlength="5">
+                <label for="event-url">Lien vers l'événement</label>
+                <input type="text" id="event-url" name="event-url" required minlength="5" placeholder="Indiquer le lien vers la page de l'événement">
 
-            <label for="startDate">Date de début</label>
-            <input type="text" id="startDate" name="startDate" required minlength="5" >
+                <label for="startDate">Date de début</label>
+                <input type="text" id="startDate" name="startDate" required minlength="5" placeholder="Respecter le format mm/jj/aa hh:mm:ss">
 
-            <label for="endDate">Date de fin</label>
-            <input type="text" id="endDate" name="endDate" required minlength="5" >
-        
-            <label for="price">Prix</label>
-            <input type="text" id="price" name="price" required minlength="2" >
+                <label for="endDate">Date de fin</label>
+                <input type="text" id="endDate" name="endDate" required minlength="5"  placeholder="Respecter le format mm/jj/aa hh:mm:ss">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Tarrification</legend>
+                <label for="price">Prix</label>
+                <input type="text" id="price" name="price" required minlength="2" placeholder="Indiquer le prix (sans la devise)">
 
-            <label for="currency">Devise</label>
-            <input type="text" id="currency" name="currency" required minlength="2" >
+                <label for="currency">Devise</label>
+                <input type="text" id="currency" name="currency" required minlength="2" placeholder="Indiquer la devise" value="Euro">
 
-            <label for="availability">Disponibilité</label>
-            <input type="text" id="availability" name="availability" required minlength="2" >
+                <label for="availability">Disponibilité</label>
+                <input type="text" id="availability" name="availability" required minlength="2" placeholder="Indiquer disponibilité">
 
-            <label for="offer-url">Lien vers l'achat</label>
-            <input type="text" id="offer-url" name="offer-url" required minlength="2" >
+                <label for="offer-url">Lien vers l'achat</label>
+                <input type="text" id="offer-url" name="offer-url" required minlength="2"  placeholder="Indiquer un lien vers la vente en ligne">
 
-            <label for="valid-from">Date de mise en vente</label>
-            <input type="text" id="valid-from" name="valid-from" required minlength="2" >
+                <label for="valid-from">Date de mise en vente</label>
+                <input type="text" id="valid-from" name="valid-from" required minlength="2" placeholder="Indiquer la date de mise en vente">
+            </fieldset>
 
-            <label for="theater-name">Lieu de l'événement</label>
-            <input type="text" id="theater-name" name="theater-name" required minlength="2" >
+            <fieldset>
+                <legend>Lieu de l'événement</legend>
+                <label for="theater-name">Lieu de l'événement</label>
+                <input type="text" id="theater-name" name="theater-name" required minlength="2" placeholder="Indiquer le nom du lieu de l'événement">
 
-            <label for="theater-cover">Image du lieu de l'événement</label>
-            <input type="text" id="theater-cover" name="theater-cover" required minlength="2" >
+                <label for="theater-cover">Image du lieu de l'événement</label>
+                <input type="text" id="theater-cover" name="theater-cover" required minlength="2" placeholder="Ajouterr une photo du lieu de l'événement">
 
-            <label for="theater-price-range">Order de prix du lieu</label>
-            <input type="text" id="theater-price-range" name="theater-price-range" required minlength="1" >
+                <label for="theater-price-range">Order de prix du lieu</label>
+                <input type="text" id="theater-price-range" name="theater-price-range" required minlength="1" placeholder="Indiquer l'ordre de prix ($, $$ ou $$$)">
 
-            <label for="theater-phone">Téléphone du lieu de l'événement</label>
-            <input type="text" id="theater-phone" name="theater-phone" required minlength="2" >
+                <label for="theater-phone">Téléphone du lieu de l'événement</label>
+                <input type="text" id="theater-phone" name="theater-phone" required minlength="2" placeholder="Indiquer le numéro de téléphone du lieu dee l'événement">
 
-            <label for="theater-city">Ville</label>
-            <input type="text" id="theater-city" name="theater-city" required minlength="2" >
+                <label for="theater-city">Ville</label>
+                <input type="text" id="theater-city" name="theater-city" required minlength="2" placeholder="Indiquer la ville">
 
-            <label for="theater-region">Region</label>
-            <input type="text" id="theater-region" name="theater-region" required minlength="2" >
+                <label for="theater-region">Region</label>
+                <input type="text" id="theater-region" name="theater-region" required minlength="2" placeholder="Indiquer la région">
 
-            <label for="theater-code">Code postal</label>
-            <input type="text" id="theater-code" name="theater-code" required minlength="2" >
+                <label for="theater-code">Code postal</label>
+                <input type="text" id="theater-code" name="theater-code" required minlength="2" placeholder="Indiquer le code postal">
 
-            <label for="theater-country">Pays</label>
-            <input type="text" id="theater-country" name="theater-country" required minlength="2" >
+                <label for="theater-country">Pays</label>
+                <input type="text" id="theater-country" name="theater-country" required minlength="2" placeholder="Indiquer le pays">
 
-            <label for="theater-address">Adresse</label>
-            <input type="text" id="theater-address" name="theater-address" required minlength="2" >
-
+                <label for="theater-address">Adresse</label>
+                <input type="text" id="theater-address" name="theater-address" required minlength="2" placeholder="Indiquer l'adresse">
+            </fieldset>
             <button type="submit" value="Valider">Valider</button>
         </form>
 
